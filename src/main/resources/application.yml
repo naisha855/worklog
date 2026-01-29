@@ -1,1 +1,10 @@
-spring.application.name=Worklog
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/work_journal
+    username: dev_user
+    password: dev_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
